@@ -39,6 +39,7 @@ input {
 }
 
 /* ================= SCROLL ANIMATION BASE CLASSES ================= */
+
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(50px);
@@ -50,7 +51,6 @@ input {
     transform: translateY(0);
 }
 
-/* Internal staggered animations for text & elements inside sections */
 .animate-on-scroll .banner-title,
 .animate-on-scroll .history-title,
 .animate-on-scroll .steps-title,
@@ -666,5 +666,647 @@ input {
 
     .footer-main {
         gap: 80px;
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 25px;
+    }
+
+    .banner-inner {
+        gap: 35px;
+    }
+
+    .banner-content {
+        width: 420px;
+    }
+
+    .banner-title {
+        width: 450px;
+        font-size: 64px;
+    }
+
+    .banner-beans {
+        right: -300px;
+    }
+
+    .product-list {
+        left: 45%;
+        gap: 35px;
+    }
+
+    .footer-main {
+        gap: 80px;
+    }
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+
+    .navbar {
+        padding-top: 25px;
+    }
+
+    .nav-right {
+        gap: 25px;
+    }
+
+    .nav-list {
+        gap: 25px;
+        font-size: 15px;
+    }
+
+    .nav-button {
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+
+    .banner {
+        padding-bottom: 55px;
+    }
+
+    .banner-inner {
+        gap: 30px;
+    }
+
+    .banner-image {
+        width: 48%;
+        margin-top: 50px;
+    }
+
+    .banner-content {
+        width: 52%;
+        margin-top: 80px;
+    }
+
+    .banner-small-title {
+        font-size: 16px;
+    }
+
+    .banner-title {
+        width: 100%;
+        font-size: 54px;
+    }
+
+    .banner-beans {
+        width: 150px;
+        top: -100px;
+        right: -100px;
+    }
+
+    .banner-text {
+        font-size: 15px;
+    }
+
+    .primary-button {
+        margin-top: 35px;
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+
+
+    /* PRODUCTS */
+
+    .products-section {
+        height: auto;
+        min-height: 415px;
+        border-radius: 80px 80px 0 0;
+    }
+
+    .products-inner {
+        padding-top: 55px;
+    }
+
+    .product-description {
+        width: 330px;
+        top: 175px;
+        font-size: 14px;
+    }
+
+    .product-list {
+        left: 43%;
+        gap: 20px;
+    }
+
+    .product-card h4 {
+        font-size: 18px;
+    }
+
+    .product-card h5 {
+        font-size: 16px;
+    }
+
+
+    /* HISTORY */
+
+    .history-section {
+        height: auto;
+        min-height: 500px;
+        border-radius: 80px 80px 0 0;
+    }
+
+    .history-inner {
+        gap: 50px;
+        align-items: center;
+    }
+
+    .history-image {
+        width: 48%;
+    }
+
+    .history-content {
+        width: 52%;
+        margin-top: 0;
+    }
+
+    .history-title {
+        font-size: 42px;
+    }
+
+    .history-text {
+        font-size: 16px;
+    }
+
+
+    /* STEPS */
+
+    .steps-title {
+        top: 45px;
+        font-size: 40px;
+    }
+
+    .step-text {
+        width: 220px;
+        font-size: 14px;
+    }
+
+    .step-one {
+        top: 210px;
+    }
+
+    .step-two {
+        top: 360px;
+        left: 70px;
+    }
+
+    .step-three {
+        top: 380px;
+        right: 60px;
+    }
+
+
+    /* TESTIMONIAL */
+
+    .testimonial-inner {
+        gap: 20px;
+    }
+
+    .testimonial-content {
+        width: 50%;
+        margin-top: 180px;
+    }
+
+    .testimonial-image {
+        width: 50%;
+        margin: 50px 0;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 75px 0 40px;
+    }
+
+    .footer-main {
+        gap: 50px;
+    }
+
+    .footer-title {
+        width: 100%;
+        margin-bottom: 70px;
+        font-size: 32px;
+    }
+
+    .footer-form {
+        width: 380px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding-top: 20px;
+    }
+
+    .navbar-inner {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .nav-list {
+        gap: 18px;
+        font-size: 13px;
+    }
+
+    .nav-button {
+        padding: 9px 15px;
+        font-size: 12px;
+    }
+
+    .nav-line {
+        margin-top: 22px;
+    }
+
+
+    /* BANNER */
+
+    .banner {
+        padding-bottom: 45px;
+    }
+
+    .banner-inner {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .banner-image {
+        width: 75%;
+        margin-top: 35px;
+    }
+
+    .banner-content {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .banner-small-title {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .banner-title {
+        width: 100%;
+        margin-bottom: 18px;
+        font-size: 44px;
+        line-height: 1.15;
+    }
+
+    .banner-beans {
+        width: 110px;
+        top: -70px;
+        right: -20px;
+    }
+
+    .banner-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .primary-button {
+        margin-top: 28px;
+        padding: 13px 22px;
+        font-size: 14px;
+    }
+
+
+    /* PRODUCTS */
+
+    .products-section {
+        min-height: auto;
+        border-radius: 55px 55px 0 0;
+    }
+
+    .products-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+
+    .scroll-button {
+        height: 45px;
+        padding: 0 22px;
+        font-size: 14px;
+    }
+
+    .product-description {
+        position: static;
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .product-list {
+        position: static;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .product-card {
+        width: 31%;
+    }
+
+    .product-card img {
+        width: 100%;
+    }
+
+    .product-card h4 {
+        margin-top: 7px;
+        font-size: 16px;
+    }
+
+    .product-card h5 {
+        margin-top: 4px;
+        font-size: 15px;
+    }
+
+
+    /* HISTORY */
+
+    .history-section {
+        min-height: auto;
+        border-radius: 55px 55px 0 0;
+    }
+
+    .history-inner {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 0;
+    }
+
+    .history-image {
+        width: 80%;
+    }
+
+    .history-content {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .history-title {
+        margin-bottom: 18px;
+        font-size: 38px;
+    }
+
+    .history-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .dark-button {
+        margin-top: 24px;
+        padding: 12px 22px;
+        font-size: 13px;
+    }
+
+
+    /* STEPS */
+
+    .steps-section {
+        padding: 50px 0;
+    }
+
+    .steps-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps-title {
+        position: static;
+        width: 100%;
+        transform: none;
+        margin-bottom: 30px;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .steps-image {
+        width: 100%;
+    }
+
+    .step-text {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    /* ONLY MOBILE STEPS FIX */
+    .step-one,
+    .step-two,
+    .step-three {
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+
+
+    /* TESTIMONIAL */
+
+    .testimonial-inner {
+        flex-direction: column;
+        gap: 15px;
+        padding: 50px 0;
+    }
+
+    .testimonial-content {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .testimonial-name {
+        font-size: 18px;
+    }
+
+    .testimonial-text {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .testimonial-image {
+        width: 75%;
+        margin: 20px 0 0;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 65px 0 35px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-logo {
+        width: 90px;
+    }
+
+    .footer-title {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    .footer-form {
+        width: 100%;
+    }
+
+    .footer-input {
+        padding: 16px 20px;
+        font-size: 14px;
+    }
+
+    .subscribe-button {
+        margin-top: 15px;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .footer-policy {
+        margin-top: 18px;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .footer-divider {
+        margin: 30px 0;
+    }
+
+    .socials {
+        gap: 14px;
+    }
+
+    .social {
+        width: 40px;
+        height: 40px;
+    }
+
+    .copyright {
+        gap: 6px;
+        margin-top: 22px;
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .nav-list {
+        gap: 12px;
+        font-size: 12px;
+    }
+
+    .nav-button {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .banner-image {
+        width: 85%;
+    }
+
+    .banner-title {
+        font-size: 36px;
+    }
+
+    .banner-beans {
+        width: 80px;
+        top: -45px;
+        right: 0;
+    }
+
+    .product-list {
+        gap: 8px;
+    }
+
+    .product-card {
+        width: 32%;
+    }
+
+    .product-card h4 {
+        font-size: 14px;
+    }
+
+    .product-card h5 {
+        font-size: 13px;
+    }
+
+    .history-image {
+        width: 90%;
+    }
+
+    .history-title {
+        font-size: 34px;
+    }
+
+    .history-text {
+        font-size: 14px;
+    }
+
+    .steps-title {
+        font-size: 32px;
+    }
+
+    .testimonial-image {
+        width: 85%;
+    }
+
+    .footer-title {
+        font-size: 27px;
     }
 }
